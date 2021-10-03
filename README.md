@@ -20,8 +20,9 @@ like platform. If we invite you for an interview, we may ask you to modify your 
 
 - The program should make an GET request to each valid address in its input.
 - The program should output status code, content length and date-time of the response.
-These should be extracted from the http response headers.
+  These should be extracted from the http response headers.
 - The output should be formatted as a stream of short JSON documents such as
+
 ```
 {
 "Url": "http://www.bbc.co.uk/iplayer",
@@ -40,15 +41,36 @@ These should be extracted from the http response headers.
 "Error": "invalid url"
 }
 ```
+
 - The program should identify and report invalid URLs, i.e., those that don't start with
-http:// or https:// or contain characters not allowed in a URL.
+  http:// or https:// or contain characters not allowed in a URL.
 - The program should include unit tests and it should be possible to execute these while
-offline.
+  offline.
 
 ## Assessment criteria
+
 We will assess your submission based on the following:
+
 - How well the program meets the requirements.
 - The structure and clarity of your code and tests.
 - Evidence that you have taken a test-driven approach during development.
 - The quality of instructions for installing, testing and running the program.
-Good luck!
+  Good luck!
+
+## To install program
+
+```
+git clone https://github.com/pav0107/BBC_Programming_Task_Ruby.git
+```
+
+## To run program
+
+```
+Ruby lib/httpReport.rb
+```
+
+## To run tests
+
+```
+rspec
+```

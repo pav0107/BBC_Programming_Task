@@ -1,6 +1,6 @@
-require 'httpReport'
+require 'httpReportTest'
 
-describe 'httpReport' do
+describe 'httpReportTest' do
   describe 'start_program' do
     it 'returns an array' do
       expect(STDIN).to receive(:gets).and_return("http://www.bbc.co.uk\n")

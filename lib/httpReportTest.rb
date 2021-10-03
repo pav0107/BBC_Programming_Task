@@ -29,7 +29,3 @@ def print_JSON(website)
   res = Net::HTTP.get_response(URI(website))
   STDOUT.puts JSON.generate({"Url": "#{URI(website)}", "Status_code": "#{res.code}", "Content_length": "#{res["content-length"]}", "Date": "#{res["date"]}"})
 end
-
-start_program
-
-report(@input_array)
