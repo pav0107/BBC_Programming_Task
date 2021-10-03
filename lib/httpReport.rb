@@ -12,3 +12,8 @@ def invalid_url_chars(website)
   end
   @invalid_url_chars
 end
+
+def invalid_url_start(website)
+  valid_url_beginning = /^https?:\/\//
+  website.scan(valid_url_beginning).length != 1
+end
